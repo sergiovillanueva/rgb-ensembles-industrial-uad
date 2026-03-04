@@ -1,0 +1,6 @@
+Dataset,Method,Model1,Model2,AP_Improv_Mean,sPRO_Improv_Mean,AUsPRO_Improv_Mean
+engine_wiring,map_ensemble_mean,patchcore,efficientad,0.0069,0.266,0.1401
+pipe_clip,map_ensemble_mean,uninet,supersimplenet,0.0201,0.4036,0.2655
+pipe_staple,map_ensemble_mean,supersimplenet,dinomaly,0.0187,0.0838,0.0352
+tank_screw,map_ensemble_mean,patchcore,reversedistillation,0.0227,0.0755,0.0316
+underbody_screw,map_ensemble_mean,patchcore,padim,-0.1105,0.6605,0.4076

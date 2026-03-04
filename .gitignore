@@ -1,0 +1,58 @@
+# Data and model weights
+data/
+datasets/
+pre_trained/
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.bin
+*.safetensors
+
+# Training outputs
+results_0/
+ensemble_results/
+cross_modal_results/
+output/
+
+# Generated images and figures
+images_mosaic/
+figures_ensemble_comparison/
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff
+*.eps
+
+# Large files
+*.pdf
+*.mp4
+*.mov
+*.avi
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Logs
+*.log

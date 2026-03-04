@@ -1,0 +1,7 @@
+Dataset;Spearman_AUROC_AUsPRO;Spearman_AP_AUsPRO
+engine_wiring;0.7;0.67
+pipe_clip;0.72;0.63
+pipe_staple;-0.38;-0.02
+tank_screw;0.3;0.4
+underbody_pipes;0.97;0.92
+underbody_screw;-0.02;-0.19

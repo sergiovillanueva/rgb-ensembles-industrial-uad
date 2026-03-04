@@ -1,0 +1,7 @@
+Dataset;Image_AUROC_Winner;Image_AUROC_Score;Image_AP_AUPR_Winner;Image_AP_AUPR_Score;AUsPRO@0.05_Winner;AUsPRO@0.05_Score
+engine_wiring;efficientad†;0.68±0.05;efficientad†;0.66±0.04;patchcore;0.14±0.00
+pipe_clip;uninet†;0.78±0.06;uninet†;0.63±0.08;patchcore†;0.43±0.02
+pipe_staple;supersimplenet†;0.60±0.06;supersimplenet†;0.50±0.03;uninet†;0.10±0.03
+tank_screw;patchcore†;0.73±0.01;patchcore†;0.34±0.01;patchcore†;0.60±0.06
+underbody_pipes;patchcore†;1.00±0.00;patchcore†;1.00±0.00;patchcore†;0.95±0.03
+underbody_screw;patchcore†;0.98±0.02;supersimplenet†;0.86±0.00;patchcore†;0.92±0.02

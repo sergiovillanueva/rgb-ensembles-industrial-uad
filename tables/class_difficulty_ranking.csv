@@ -1,0 +1,7 @@
+Dataset;Avg_Rank;Best_Score;Worst_Score
+engine_wiring;5.0;0.14;0.0
+pipe_clip;5.0;0.43;0.0
+pipe_staple;5.0;0.1;0.0
+tank_screw;5.0;0.6;0.0
+underbody_pipes;5.0;0.95;0.0
+underbody_screw;5.0;0.92;0.0

@@ -1,0 +1,1311 @@
+% LaTeX tables generated from CSV files
+% Requires packages: booktabs, threeparttable
+
+% Table: AUsPRO_0_05_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Pixel-level segmentation results (AUsPRO@0.05) for depth-enhanced images. Higher is better.}
+\label{tab:auspro-0-05-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.12$\pm$0.39 & \textbf{0.00$\pm$0.00} \\
+efficientad & \textbf{0.23$\pm$0.05} & \textbf{0.43$\pm$0.12} & \textbf{0.28$\pm$0.07} & \textbf{0.31$\pm$0.08} & \textbf{0.48$\pm$0.12} & \textbf{0.03$\pm$0.04} \\
+fastflow & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & \textbf{0.00$\pm$0.00} \\
+reversedistillation & 0.02$\pm$0.06 & 0.00$\pm$0.01 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.08$\pm$0.08 & \textbf{0.01$\pm$0.01} \\
+dinomaly & 0.05$\pm$0.08 & 0.03$\pm$0.05 & 0.03$\pm$0.01 & 0.00$\pm$0.01 & \textbf{0.30$\pm$1.24} & \textbf{0.02$\pm$0.08} \\
+uflow & 0.00$\pm$0.01 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.01$\pm$0.02 & \textbf{0.00$\pm$0.00} \\
+supersimplenet & 0.01$\pm$0.02 & 0.07$\pm$0.13 & 0.00$\pm$0.01 & 0.01$\pm$0.01 & 0.01$\pm$0.00 & \textbf{0.00$\pm$0.00} \\
+uninet & 0.00$\pm$0.01 & 0.02$\pm$0.02 & 0.02$\pm$0.01 & 0.08$\pm$0.14 & 0.00$\pm$0.01 & \textbf{0.00$\pm$0.00} \\
+patchcore & 0.01$\pm$0.00 & 0.01$\pm$0.00 & 0.00$\pm$0.00 & 0.06$\pm$0.04 & \textbf{0.50$\pm$0.10} & \textbf{0.00$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps as additional input. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: AUsPRO_0_05_macro_rgb
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Pixel-level segmentation (AUsPRO@0.05) results for RGB images (macro-averaged over datasets)}
+\label{tab:auspro-0-05-macro-rgb}
+\begin{tabular}{lc}
+\toprule
+Model & AUsPRO\@0.05 \\
+\midrule
+dinomaly & 0.146$\pm$0.300 \\
+efficientad & 0.074$\pm$0.071 \\
+fastflow & 0.001$\pm$0.001 \\
+padim & 0.118$\pm$0.246 \\
+patchcore & \textbf{0.507$\pm$0.358} \\
+reversedistillation & 0.288$\pm$0.262* \\
+supersimplenet & 0.018$\pm$0.017 \\
+uflow & 0.009$\pm$0.010 \\
+uninet & 0.098$\pm$0.104 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values show macro-mean $\pm$ macro-std across datasets for each model. AUsPRO measures pixel-level localization performance at 5\% FPR threshold. $\textbf{Best}$ (rank 1) and second-best (rank 2) marked with *.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: AUsPRO_0_05_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Pixel-level segmentation results (AUsPRO@0.05) for RGB images. Higher is better.}
+\label{tab:auspro-0-05-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.01$\pm$0.04 & 0.02$\pm$0.02 & 0.00$\pm$0.00 & 0.01$\pm$0.02 & 0.67$\pm$0.20 & 0.00$\pm$0.00 \\
+efficientad & \textbf{0.08$\pm$0.14} & 0.05$\pm$0.15 & \textbf{0.08$\pm$0.10} & 0.00$\pm$0.01 & 0.22$\pm$0.03 & 0.01$\pm$0.03 \\
+fastflow & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 \\
+reversedistillation & \textbf{0.14$\pm$0.06} & 0.25$\pm$0.05 & 0.00$\pm$0.00 & 0.08$\pm$0.02 & 0.74$\pm$0.01 & 0.53$\pm$0.11 \\
+dinomaly & 0.03$\pm$0.01 & 0.01$\pm$0.03 & 0.01$\pm$0.01 & 0.00$\pm$0.01 & 0.82$\pm$0.11 & 0.00$\pm$0.00 \\
+uflow & 0.03$\pm$0.09 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.02$\pm$0.05 & 0.00$\pm$0.01 \\
+supersimplenet & \textbf{0.04$\pm$0.10} & 0.03$\pm$0.02 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.03$\pm$0.09 & 0.00$\pm$0.01 \\
+uninet & 0.06$\pm$0.02 & 0.31$\pm$0.08 & \textbf{0.10$\pm$0.08} & 0.11$\pm$0.01 & 0.00$\pm$0.00 & 0.00$\pm$0.01 \\
+patchcore & \textbf{0.14$\pm$0.01} & \textbf{0.43$\pm$0.04} & 0.00$\pm$0.00 & \textbf{0.60$\pm$0.15} & \textbf{0.95$\pm$0.06} & \textbf{0.92$\pm$0.05} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. AUsPRO measures pixel-level localization performance. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: Image_AP_AUPR_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Image-level classification results (AP-AUPR) for depth-enhanced images. Higher is better.}
+\label{tab:image-ap-aupr-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.57$\pm$0.04 & 0.41$\pm$0.03 & \textbf{0.39$\pm$0.01} & \textbf{0.24$\pm$0.01} & 0.56$\pm$0.02 & \textbf{0.11$\pm$0.01} \\
+efficientad & \textbf{0.63$\pm$0.03} & \textbf{0.55$\pm$0.12} & \textbf{0.53$\pm$0.19} & \textbf{0.25$\pm$0.06} & 0.81$\pm$0.04 & \textbf{0.11$\pm$0.01} \\
+fastflow & \textbf{0.57$\pm$0.14} & \textbf{0.49$\pm$0.14} & \textbf{0.37$\pm$0.05} & \textbf{0.26$\pm$0.07} & 0.53$\pm$0.01 & \textbf{0.06$\pm$0.07} \\
+reversedistillation & 0.56$\pm$0.05 & \textbf{0.49$\pm$0.07} & \textbf{0.46$\pm$0.02} & \textbf{0.25$\pm$0.01} & \textbf{0.83$\pm$0.06} & 0.06$\pm$0.03 \\
+dinomaly & 0.55$\pm$0.02 & \textbf{0.48$\pm$0.07} & \textbf{0.44$\pm$0.09} & \textbf{0.26$\pm$0.15} & \textbf{0.74$\pm$0.56} & 0.07$\pm$0.01 \\
+uflow & 0.52$\pm$0.05 & \textbf{0.50$\pm$0.05} & \textbf{0.42$\pm$0.04} & \textbf{0.24$\pm$0.04} & 0.65$\pm$0.16 & \textbf{0.09$\pm$0.04} \\
+supersimplenet & \textbf{0.60$\pm$0.06} & \textbf{0.51$\pm$0.14} & \textbf{0.49$\pm$0.07} & \textbf{0.28$\pm$0.10} & \textbf{0.69$\pm$0.20} & \textbf{0.11$\pm$0.17} \\
+uninet & \textbf{0.61$\pm$0.04} & \textbf{0.45$\pm$0.08} & \textbf{0.42$\pm$0.07} & \textbf{0.27$\pm$0.05} & 0.63$\pm$0.18 & \textbf{0.08$\pm$0.07} \\
+patchcore & 0.54$\pm$0.07 & \textbf{0.47$\pm$0.05} & \textbf{0.43$\pm$0.01} & \textbf{0.25$\pm$0.02} & \textbf{0.87$\pm$0.00} & \textbf{0.10$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps as additional input. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: Image_AP_AUPR_macro_rgb
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Image-level Average Precision (AP-AUPR) results for RGB images (macro-averaged over datasets)}
+\label{tab:image-ap-aupr-macro-rgb}
+\begin{tabular}{lc}
+\toprule
+Model & Image\_AP\_AUPR \\
+\midrule
+dinomaly & 0.492$\pm$0.242 \\
+efficientad & 0.455$\pm$0.180 \\
+fastflow & 0.452$\pm$0.108 \\
+padim & 0.549$\pm$0.182 \\
+patchcore & \textbf{0.584$\pm$0.207} \\
+reversedistillation & 0.466$\pm$0.282 \\
+supersimplenet & 0.562$\pm$0.168* \\
+uflow & 0.455$\pm$0.126 \\
+uninet & 0.482$\pm$0.126 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values show macro-mean $\pm$ macro-std across datasets for each model. Average Precision under Precision-Recall curve for imbalanced anomaly detection. $\textbf{Best}$ (rank 1) and second-best (rank 2) marked with *.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: Image_AP_AUPR_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Image-level classification results (AP-AUPR) for RGB images. Higher is better.}
+\label{tab:image-ap-aupr-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.56$\pm$0.04 & \textbf{0.47$\pm$0.06} & 0.41$\pm$0.02 & \textbf{0.30$\pm$0.17} & \textbf{0.73$\pm$0.34} & \textbf{0.82$\pm$0.07} \\
+efficientad & \textbf{0.66$\pm$0.10} & \textbf{0.42$\pm$0.30} & 0.42$\pm$0.05 & 0.28$\pm$0.04 & 0.72$\pm$0.10 & 0.23$\pm$0.43 \\
+fastflow & 0.55$\pm$0.08 & 0.43$\pm$0.02 & \textbf{0.45$\pm$0.16} & 0.24$\pm$0.03 & 0.57$\pm$0.08 & \textbf{0.47$\pm$0.47} \\
+reversedistillation & 0.57$\pm$0.05 & \textbf{0.56$\pm$0.16} & 0.40$\pm$0.01 & 0.26$\pm$0.02 & \textbf{0.96$\pm$0.06} & 0.05$\pm$0.01 \\
+dinomaly & 0.53$\pm$0.05 & 0.44$\pm$0.04 & \textbf{0.48$\pm$0.05} & 0.29$\pm$0.00 & \textbf{0.98$\pm$0.04} & 0.23$\pm$0.42 \\
+uflow & 0.56$\pm$0.11 & 0.43$\pm$0.04 & 0.42$\pm$0.05 & 0.24$\pm$0.01 & 0.64$\pm$0.15 & 0.44$\pm$0.33 \\
+supersimplenet & \textbf{0.60$\pm$0.10} & \textbf{0.56$\pm$0.18} & \textbf{0.50$\pm$0.07} & \textbf{0.29$\pm$0.10} & 0.56$\pm$0.06 & \textbf{0.86$\pm$0.01} \\
+uninet & 0.57$\pm$0.05 & \textbf{0.63$\pm$0.19} & 0.41$\pm$0.02 & 0.24$\pm$0.07 & 0.50$\pm$0.02 & \textbf{0.54$\pm$0.79} \\
+patchcore & \textbf{0.59$\pm$0.02} & \textbf{0.52$\pm$0.01} & \textbf{0.44$\pm$0.06} & \textbf{0.34$\pm$0.02} & \textbf{1.00$\pm$0.00} & \textbf{0.62$\pm$0.66} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Average Precision under Precision-Recall curve for imbalanced anomaly detection. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: Image_AUROC_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Image-level classification results (AUROC) for depth-enhanced images. Higher is better.}
+\label{tab:image-auroc-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.54$\pm$0.02 & 0.50$\pm$0.01 & 0.53$\pm$0.04 & \textbf{0.50$\pm$0.03} & 0.51$\pm$0.07 & \textbf{0.54$\pm$0.09} \\
+efficientad & \textbf{0.65$\pm$0.03} & \textbf{0.70$\pm$0.13} & \textbf{0.72$\pm$0.19} & \textbf{0.55$\pm$0.13} & 0.84$\pm$0.03 & \textbf{0.60$\pm$0.09} \\
+fastflow & 0.55$\pm$0.10 & 0.54$\pm$0.11 & 0.45$\pm$0.02 & \textbf{0.55$\pm$0.14} & 0.50$\pm$0.01 & \textbf{0.52$\pm$0.10} \\
+reversedistillation & 0.55$\pm$0.05 & 0.51$\pm$0.03 & \textbf{0.59$\pm$0.02} & \textbf{0.52$\pm$0.05} & 0.79$\pm$0.05 & \textbf{0.50$\pm$0.06} \\
+dinomaly & 0.52$\pm$0.01 & 0.56$\pm$0.10 & 0.54$\pm$0.05 & \textbf{0.55$\pm$0.16} & \textbf{0.71$\pm$0.61} & \textbf{0.53$\pm$0.09} \\
+uflow & 0.52$\pm$0.04 & 0.56$\pm$0.04 & 0.53$\pm$0.07 & \textbf{0.51$\pm$0.05} & 0.63$\pm$0.16 & \textbf{0.57$\pm$0.10} \\
+supersimplenet & 0.58$\pm$0.07 & 0.58$\pm$0.12 & \textbf{0.60$\pm$0.08} & \textbf{0.56$\pm$0.09} & 0.66$\pm$0.19 & \textbf{0.56$\pm$0.10} \\
+uninet & \textbf{0.61$\pm$0.10} & 0.52$\pm$0.07 & 0.55$\pm$0.09 & \textbf{0.55$\pm$0.05} & 0.54$\pm$0.19 & \textbf{0.61$\pm$0.23} \\
+patchcore & 0.53$\pm$0.04 & 0.52$\pm$0.08 & \textbf{0.57$\pm$0.02} & \textbf{0.51$\pm$0.02} & \textbf{0.88$\pm$0.02} & \textbf{0.49$\pm$0.02} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps as additional input. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: Image_AUROC_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Image-level classification results (AUROC) for RGB images. Higher is better.}
+\label{tab:image-auroc-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.55$\pm$0.09 & 0.53$\pm$0.01 & \textbf{0.52$\pm$0.07} & 0.54$\pm$0.10 & \textbf{0.81$\pm$0.25} & 0.93$\pm$0.01 \\
+efficientad & \textbf{0.68$\pm$0.11} & \textbf{0.51$\pm$0.50} & \textbf{0.54$\pm$0.07} & 0.54$\pm$0.05 & 0.76$\pm$0.11 & \textbf{0.66$\pm$0.55} \\
+fastflow & 0.56$\pm$0.09 & 0.50$\pm$0.03 & \textbf{0.57$\pm$0.14} & 0.52$\pm$0.03 & 0.57$\pm$0.03 & 0.75$\pm$0.19 \\
+reversedistillation & \textbf{0.61$\pm$0.03} & \textbf{0.71$\pm$0.15} & \textbf{0.52$\pm$0.01} & 0.56$\pm$0.05 & 0.96$\pm$0.02 & 0.53$\pm$0.05 \\
+dinomaly & 0.53$\pm$0.08 & 0.51$\pm$0.04 & \textbf{0.56$\pm$0.09} & 0.58$\pm$0.02 & \textbf{0.98$\pm$0.04} & \textbf{0.65$\pm$0.41} \\
+uflow & 0.55$\pm$0.14 & 0.52$\pm$0.02 & \textbf{0.52$\pm$0.04} & 0.52$\pm$0.02 & 0.61$\pm$0.15 & 0.74$\pm$0.16 \\
+supersimplenet & \textbf{0.60$\pm$0.14} & \textbf{0.62$\pm$0.22} & \textbf{0.60$\pm$0.16} & \textbf{0.59$\pm$0.15} & 0.60$\pm$0.07 & 0.93$\pm$0.02 \\
+uninet & 0.57$\pm$0.08 & \textbf{0.78$\pm$0.14} & \textbf{0.50$\pm$0.00} & 0.53$\pm$0.10 & 0.52$\pm$0.05 & \textbf{0.82$\pm$0.32} \\
+patchcore & \textbf{0.59$\pm$0.04} & \textbf{0.65$\pm$0.01} & \textbf{0.52$\pm$0.12} & \textbf{0.73$\pm$0.03} & \textbf{1.00$\pm$0.00} & \textbf{0.98$\pm$0.05} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. AUROC measures discriminative power between normal and anomalous images. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: R1_RGB_image_main
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{R1: RGB baseline results for image-level detection (macro-averaged over datasets)}
+\label{tab:r1-rgb-image-main}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lccc}
+\toprule
+Model & Image\_AUROC & Image\_AP\_AUPR & Mean-TPR\@TNR \\
+\midrule
+dinomaly & 0.634$\pm$0.160 & 0.492$\pm$0.242 & 0.178$\pm$0.234 \\
+efficientad & 0.614$\pm$0.092 & 0.455$\pm$0.180 & 0.254$\pm$0.239 \\
+fastflow & 0.578$\pm$0.082 & 0.452$\pm$0.108 & 0.033$\pm$0.026 \\
+padim & 0.647$\pm$0.162 & 0.549$\pm$0.182 & 0.056$\pm$0.019 \\
+patchcore & \textbf{0.744$\pm$0.184} & \textbf{0.584$\pm$0.207} & \textbf{0.735$\pm$0.349} \\
+reversedistillation & 0.647$\pm$0.153 & 0.466$\pm$0.282 & 0.380$\pm$0.380* \\
+supersimplenet & 0.656$\pm$0.123* & 0.562$\pm$0.168* & 0.090$\pm$0.050 \\
+uflow & 0.576$\pm$0.079 & 0.455$\pm$0.126 & 0.066$\pm$0.026 \\
+uninet & 0.621$\pm$0.128 & 0.482$\pm$0.126 & 0.215$\pm$0.328 \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values show macro-mean $\pm$ macro-std across datasets for each model. Mean-TPR@TNR averaged over 99\%, 95\%, and 90\% operating points. $\textbf{Best}$ (rank 1) and second-best (rank 2) marked with *.
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: R2_RGB_pixel_main
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{R2: RGB baseline results for pixel-level segmentation (macro-averaged over datasets)}
+\label{tab:r2-rgb-pixel-main}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcc}
+\toprule
+Model & AUsPRO\@0.05 & sPRO\@0.05 \\
+\midrule
+dinomaly & 0.146$\pm$0.300 & 0.179$\pm$0.342 \\
+efficientad & 0.074$\pm$0.071 & 0.173$\pm$0.128 \\
+fastflow & 0.001$\pm$0.001 & 0.001$\pm$0.002 \\
+padim & 0.118$\pm$0.246 & 0.174$\pm$0.336 \\
+patchcore & \textbf{0.507$\pm$0.358} & \textbf{0.651$\pm$0.358} \\
+reversedistillation & 0.288$\pm$0.262* & 0.452$\pm$0.345* \\
+supersimplenet & 0.018$\pm$0.017 & 0.038$\pm$0.036 \\
+uflow & 0.009$\pm$0.010 & 0.022$\pm$0.021 \\
+uninet & 0.098$\pm$0.104 & 0.178$\pm$0.158 \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values show macro-mean $\pm$ macro-std across datasets for each model. AUsPRO and sPRO at 5\% FPR threshold. $\textbf{Best}$ (rank 1) and second-best (rank 2) marked with *.
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: R3_calibration_main
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{R3: Calibration analysis with operating point stability (macro-averaged over datasets)}
+\label{tab:r3-calibration-main}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccccc}
+\toprule
+Model & $\Delta$TNR\@0.99 & $\Delta$TNR\@0.95 & $\Delta$TNR\@0.90 & Comp 99\% & Comp 95\% & Comp 90\% & Mono TPR\% & Mono TNR\% \\
+\midrule
+dinomaly & -0.005$\pm$0.020 & +0.006$\pm$0.034 & +0.020$\pm$0.050 & 83.3\% & 100.0\% & 50.0\% & 100.0\% & 100.0\% \\
+efficientad & -0.054$\pm$0.058 & -0.112$\pm$0.128 & -0.117$\pm$0.156 & 50.0\% & 50.0\% & 33.3\% & 100.0\% & 100.0\% \\
+fastflow & +0.005$\pm$0.005 & +0.034$\pm$0.017 & +0.065$\pm$0.030 & 100.0\% & 50.0\% & 33.3\% & 100.0\% & 100.0\% \\
+padim & +0.000$\pm$0.007 & +0.019$\pm$0.023 & +0.039$\pm$0.040 & 100.0\% & 83.3\% & 50.0\% & 100.0\% & 100.0\% \\
+patchcore & -0.375$\pm$0.277 & -0.525$\pm$0.296 & -0.556$\pm$0.309 & 16.7\% & 16.7\% & 0.0\% & 100.0\% & 100.0\% \\
+reversedistillation & -0.090$\pm$0.088 & -0.256$\pm$0.272 & -0.299$\pm$0.335 & 50.0\% & 33.3\% & 33.3\% & 100.0\% & 100.0\% \\
+supersimplenet & -0.006$\pm$0.012 & -0.005$\pm$0.033 & +0.011$\pm$0.045 & 100.0\% & 66.7\% & 83.3\% & 100.0\% & 100.0\% \\
+uflow & -0.001$\pm$0.009 & +0.014$\pm$0.019 & +0.025$\pm$0.037 & 100.0\% & 83.3\% & 83.3\% & 100.0\% & 100.0\% \\
+uninet & -0.081$\pm$0.152 & -0.092$\pm$0.182 & -0.085$\pm$0.197 & 66.7\% & 66.7\% & 33.3\% & 100.0\% & 100.0\% \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: $\Delta$TNR = Test\_TNR - Target\_TNR shows calibration drift. Comp\%: percentage of datasets with comparable thresholds ($|\Delta$TNR$| \leq 0.03$ for 99\%, $\leq 0.05$ for 95\%/90\%). Mono\%: percentage with monotonic TPR/TNR trends across operating points.
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: R4_depth_deltas_main
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{R4: Pseudo-depth enhancement effects (macro-averaged deltas over datasets)}
+\label{tab:r4-depth-deltas-main}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lccc}
+\toprule
+Model & $\Delta$AUROC & $\Delta$AP & $\Delta$AUsPRO \\
+\midrule
+dinomaly & \textcolor{red}{-0.066$\pm$0.101} & \textcolor{red}{-0.068$\pm$0.101} & \textcolor{red}{-0.073$\pm$0.197} \\
+efficientad & \textcolor{green}{+0.063$\pm$0.101} & \textcolor{green}{+0.025$\pm$0.090} & \textcolor{green}{+0.220$\pm$0.115} \\
+fastflow & \textcolor{red}{-0.056$\pm$0.095} & \textcolor{red}{-0.071$\pm$0.155} & -0.000$\pm$0.001 \\
+padim & \textcolor{red}{-0.126$\pm$0.157} & \textcolor{red}{-0.168$\pm$0.252} & \textcolor{red}{-0.098$\pm$0.203} \\
+patchcore & \textcolor{red}{-0.160$\pm$0.170} & \textcolor{red}{-0.142$\pm$0.173} & \textcolor{red}{-0.411$\pm$0.294} \\
+reversedistillation & \textcolor{red}{-0.071$\pm$0.092} & \textcolor{red}{-0.024$\pm$0.058} & \textcolor{red}{-0.269$\pm$0.241} \\
+supersimplenet & \textcolor{red}{-0.066$\pm$0.141} & \textcolor{red}{-0.114$\pm$0.290} & -0.001$\pm$0.022 \\
+uflow & \textcolor{red}{-0.022$\pm$0.067} & \textcolor{red}{-0.053$\pm$0.136} & \textcolor{red}{-0.006$\pm$0.008} \\
+uninet & \textcolor{red}{-0.059$\pm$0.126} & \textcolor{red}{-0.071$\pm$0.195} & \textcolor{red}{-0.077$\pm$0.101} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: $\Delta$ = Depth\_enhanced - RGB\_baseline, macro-averaged across datasets. Positive values indicate improvement with pseudo-depth. Values show mean $\pm$ std of per-dataset deltas. Negative values suggest depth estimation may introduce noise.
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: TPR_TNR0_90_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{True Positive Rate at 90\% True Negative Rate for depth-enhanced images. Higher is better.}
+\label{tab:tpr-tnr0-90-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.15$\pm$0.19 & 0.13$\pm$0.13 & 0.09$\pm$0.06 & \textbf{0.07$\pm$0.05} & 0.08$\pm$0.00 & \textbf{0.17$\pm$0.14} \\
+efficientad & \textbf{0.61$\pm$0.24} & \textbf{0.69$\pm$0.42} & \textbf{0.84$\pm$0.46} & \textbf{0.18$\pm$0.33} & \textbf{0.95$\pm$0.05} & \textbf{0.20$\pm$0.21} \\
+fastflow & 0.12$\pm$0.24 & 0.10$\pm$0.22 & 0.08$\pm$0.14 & \textbf{0.01$\pm$0.06} & 0.01$\pm$0.02 & \textbf{0.09$\pm$0.40} \\
+reversedistillation & 0.17$\pm$0.12 & 0.14$\pm$0.13 & 0.12$\pm$0.08 & \textbf{0.17$\pm$0.11} & 0.49$\pm$0.24 & \textbf{0.11$\pm$0.00} \\
+dinomaly & 0.14$\pm$0.07 & 0.11$\pm$0.10 & 0.17$\pm$0.23 & \textbf{0.12$\pm$0.15} & \textbf{0.42$\pm$1.16} & \textbf{0.13$\pm$0.08} \\
+uflow & 0.09$\pm$0.03 & 0.15$\pm$0.06 & 0.09$\pm$0.06 & \textbf{0.09$\pm$0.04} & 0.22$\pm$0.04 & \textbf{0.15$\pm$0.21} \\
+supersimplenet & 0.22$\pm$0.09 & 0.20$\pm$0.09 & 0.31$\pm$0.23 & \textbf{0.11$\pm$0.11} & 0.31$\pm$0.28 & \textbf{0.15$\pm$0.08} \\
+uninet & 0.18$\pm$0.11 & 0.15$\pm$0.06 & 0.04$\pm$0.02 & \textbf{0.12$\pm$0.02} & 0.19$\pm$0.23 & \textbf{0.09$\pm$0.16} \\
+patchcore & 0.14$\pm$0.17 & 0.11$\pm$0.09 & 0.17$\pm$0.08 & \textbf{0.09$\pm$0.00} & 0.64$\pm$0.18 & \textbf{0.09$\pm$0.08} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps. Operating point with 10\% FPR. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: TPR_TNR0_90_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{True Positive Rate at 90\% True Negative Rate for RGB images. Higher is better.}
+\label{tab:tpr-tnr0-90-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.09$\pm$0.04 & 0.09$\pm$0.10 & \textbf{0.13$\pm$0.04} & 0.09$\pm$0.05 & 0.12$\pm$0.33 & 0.04$\pm$0.16 \\
+efficientad & \textbf{0.57$\pm$0.38} & \textbf{0.21$\pm$0.90} & \textbf{0.33$\pm$0.70} & 0.08$\pm$0.07 & 0.81$\pm$0.12 & 0.00$\pm$0.00 \\
+fastflow & 0.08$\pm$0.08 & 0.05$\pm$0.21 & \textbf{0.11$\pm$0.30} & 0.00$\pm$0.00 & 0.03$\pm$0.12 & 0.04$\pm$0.08 \\
+reversedistillation & \textbf{0.57$\pm$1.23} & \textbf{1.00$\pm$0.00} & \textbf{0.15$\pm$0.16} & 0.00$\pm$0.02 & 0.99$\pm$0.01 & 0.06$\pm$0.14 \\
+dinomaly & 0.08$\pm$0.10 & 0.19$\pm$0.06 & \textbf{0.07$\pm$0.01} & 0.16$\pm$0.09 & \textbf{0.90$\pm$0.19} & 0.11$\pm$0.28 \\
+uflow & 0.15$\pm$0.08 & 0.05$\pm$0.08 & \textbf{0.13$\pm$0.10} & 0.07$\pm$0.13 & 0.16$\pm$0.07 & 0.13$\pm$0.16 \\
+supersimplenet & 0.19$\pm$0.14 & 0.24$\pm$0.15 & \textbf{0.18$\pm$0.20} & 0.14$\pm$0.25 & 0.12$\pm$0.11 & 0.00$\pm$0.00 \\
+uninet & 0.05$\pm$0.04 & \textbf{0.99$\pm$0.05} & \textbf{0.15$\pm$0.04} & 0.14$\pm$0.27 & 0.09$\pm$0.04 & 0.15$\pm$0.21 \\
+patchcore & \textbf{0.71$\pm$0.31} & \textbf{0.97$\pm$0.06} & \textbf{0.06$\pm$0.07} & \textbf{1.00$\pm$0.02} & \textbf{1.00$\pm$0.00} & \textbf{1.00$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Operating point with relaxed false positive control (10\% FPR). * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: TPR_TNR0_95_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{True Positive Rate at 95\% True Negative Rate for depth-enhanced images. Higher is better.}
+\label{tab:tpr-tnr0-95-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.09$\pm$0.13 & 0.04$\pm$0.08 & 0.06$\pm$0.02 & \textbf{0.04$\pm$0.02} & 0.05$\pm$0.04 & \textbf{0.07$\pm$0.08} \\
+efficientad & \textbf{0.51$\pm$0.24} & \textbf{0.52$\pm$0.27} & \textbf{0.74$\pm$0.54} & \textbf{0.11$\pm$0.21} & \textbf{0.90$\pm$0.07} & \textbf{0.07$\pm$0.08} \\
+fastflow & 0.07$\pm$0.13 & 0.06$\pm$0.19 & 0.05$\pm$0.10 & \textbf{0.00$\pm$0.02} & 0.01$\pm$0.02 & \textbf{0.06$\pm$0.24} \\
+reversedistillation & 0.11$\pm$0.09 & 0.08$\pm$0.13 & 0.06$\pm$0.06 & \textbf{0.06$\pm$0.07} & 0.38$\pm$0.34 & \textbf{0.04$\pm$0.08} \\
+dinomaly & 0.09$\pm$0.07 & 0.06$\pm$0.00 & 0.07$\pm$0.09 & \textbf{0.06$\pm$0.12} & \textbf{0.34$\pm$1.01} & \textbf{0.09$\pm$0.08} \\
+uflow & 0.03$\pm$0.03 & 0.10$\pm$0.06 & 0.05$\pm$0.01 & \textbf{0.04$\pm$0.04} & 0.16$\pm$0.06 & \textbf{0.13$\pm$0.16} \\
+supersimplenet & 0.13$\pm$0.01 & 0.13$\pm$0.09 & 0.19$\pm$0.25 & \textbf{0.07$\pm$0.07} & 0.20$\pm$0.24 & \textbf{0.06$\pm$0.14} \\
+uninet & 0.11$\pm$0.10 & 0.09$\pm$0.08 & 0.01$\pm$0.02 & \textbf{0.05$\pm$0.07} & 0.14$\pm$0.25 & \textbf{0.04$\pm$0.16} \\
+patchcore & 0.08$\pm$0.14 & 0.06$\pm$0.08 & 0.06$\pm$0.08 & \textbf{0.04$\pm$0.08} & 0.52$\pm$0.16 & \textbf{0.06$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps. Operating point with 5\% FPR. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: TPR_TNR0_95_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{True Positive Rate at 95\% True Negative Rate for RGB images. Higher is better.}
+\label{tab:tpr-tnr0-95-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.07$\pm$0.01 & 0.05$\pm$0.04 & \textbf{0.08$\pm$0.05} & 0.06$\pm$0.07 & 0.07$\pm$0.22 & 0.02$\pm$0.08 \\
+efficientad & \textbf{0.46$\pm$0.43} & 0.07$\pm$0.28 & \textbf{0.29$\pm$0.63} & 0.05$\pm$0.03 & 0.74$\pm$0.13 & 0.00$\pm$0.00 \\
+fastflow & 0.05$\pm$0.05 & 0.03$\pm$0.14 & \textbf{0.08$\pm$0.19} & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.04$\pm$0.08 \\
+reversedistillation & \textbf{0.46$\pm$1.05} & \textbf{0.98$\pm$0.02} & \textbf{0.07$\pm$0.10} & 0.00$\pm$0.00 & 0.98$\pm$0.01 & 0.02$\pm$0.08 \\
+dinomaly & 0.04$\pm$0.07 & 0.12$\pm$0.06 & \textbf{0.03$\pm$0.02} & 0.11$\pm$0.03 & \textbf{0.84$\pm$0.24} & 0.06$\pm$0.14 \\
+uflow & 0.08$\pm$0.08 & 0.03$\pm$0.07 & \textbf{0.05$\pm$0.10} & 0.03$\pm$0.09 & 0.09$\pm$0.11 & 0.11$\pm$0.14 \\
+supersimplenet & 0.13$\pm$0.09 & 0.17$\pm$0.17 & \textbf{0.11$\pm$0.15} & 0.07$\pm$0.21 & 0.08$\pm$0.11 & 0.00$\pm$0.00 \\
+uninet & 0.03$\pm$0.04 & \textbf{0.95$\pm$0.10} & \textbf{0.07$\pm$0.06} & 0.07$\pm$0.16 & 0.07$\pm$0.01 & 0.11$\pm$0.14 \\
+patchcore & \textbf{0.61$\pm$0.33} & 0.88$\pm$0.07 & \textbf{0.03$\pm$0.01} & \textbf{0.99$\pm$0.06} & \textbf{1.00$\pm$0.00} & \textbf{1.00$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Operating point with moderate false positive control (5\% FPR). * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: TPR_TNR0_99_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{True Positive Rate at 99\% True Negative Rate for depth-enhanced images. Higher is better.}
+\label{tab:tpr-tnr0-99-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.03$\pm$0.06 & \textbf{0.02$\pm$0.05} & 0.03$\pm$0.04 & \textbf{0.01$\pm$0.02} & 0.03$\pm$0.02 & \textbf{0.06$\pm$0.00} \\
+efficientad & \textbf{0.28$\pm$0.12} & \textbf{0.35$\pm$0.36} & \textbf{0.59$\pm$0.50} & \textbf{0.01$\pm$0.03} & \textbf{0.72$\pm$0.25} & \textbf{0.06$\pm$0.00} \\
+fastflow & 0.01$\pm$0.01 & \textbf{0.00$\pm$0.00} & 0.03$\pm$0.07 & \textbf{0.00$\pm$0.00} & 0.01$\pm$0.02 & \textbf{0.02$\pm$0.08} \\
+reversedistillation & 0.05$\pm$0.06 & \textbf{0.01$\pm$0.05} & 0.03$\pm$0.04 & \textbf{0.02$\pm$0.02} & 0.22$\pm$0.38 & \textbf{0.02$\pm$0.08} \\
+dinomaly & 0.03$\pm$0.06 & \textbf{0.02$\pm$0.04} & 0.01$\pm$0.03 & \textbf{0.02$\pm$0.09} & 0.19$\pm$0.56 & \textbf{0.04$\pm$0.16} \\
+uflow & 0.01$\pm$0.02 & \textbf{0.02$\pm$0.04} & 0.00$\pm$0.00 & \textbf{0.01$\pm$0.03} & 0.09$\pm$0.06 & 0.00$\pm$0.00 \\
+supersimplenet & 0.05$\pm$0.04 & \textbf{0.07$\pm$0.14} & 0.06$\pm$0.13 & \textbf{0.02$\pm$0.04} & 0.07$\pm$0.08 & 0.00$\pm$0.00 \\
+uninet & 0.03$\pm$0.03 & \textbf{0.04$\pm$0.07} & 0.00$\pm$0.00 & \textbf{0.01$\pm$0.03} & 0.07$\pm$0.13 & 0.00$\pm$0.00 \\
+patchcore & 0.02$\pm$0.07 & \textbf{0.01$\pm$0.03} & 0.01$\pm$0.01 & \textbf{0.02$\pm$0.07} & 0.41$\pm$0.18 & \textbf{0.06$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps. Operating point with 1\% FPR. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: TPR_TNR0_99_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{True Positive Rate at 99\% True Negative Rate for RGB images. Higher is better.}
+\label{tab:tpr-tnr0-99-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.03$\pm$0.02 & 0.01$\pm$0.03 & \textbf{0.03$\pm$0.04} & 0.02$\pm$0.05 & 0.03$\pm$0.11 & 0.00$\pm$0.00 \\
+efficientad & \textbf{0.31$\pm$0.21} & 0.01$\pm$0.03 & \textbf{0.16$\pm$0.35} & 0.02$\pm$0.04 & 0.46$\pm$0.31 & 0.00$\pm$0.00 \\
+fastflow & 0.03$\pm$0.05 & 0.00$\pm$0.01 & \textbf{0.03$\pm$0.08} & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.02$\pm$0.08 \\
+reversedistillation & \textbf{0.23$\pm$0.88} & 0.38$\pm$0.33 & \textbf{0.02$\pm$0.04} & 0.00$\pm$0.00 & \textbf{0.93$\pm$0.12} & 0.02$\pm$0.08 \\
+dinomaly & 0.02$\pm$0.03 & 0.05$\pm$0.08 & \textbf{0.00$\pm$0.01} & 0.04$\pm$0.02 & \textbf{0.34$\pm$0.77} & 0.04$\pm$0.08 \\
+uflow & 0.04$\pm$0.09 & 0.00$\pm$0.02 & \textbf{0.02$\pm$0.04} & 0.00$\pm$0.02 & 0.04$\pm$0.08 & 0.00$\pm$0.00 \\
+supersimplenet & 0.07$\pm$0.07 & 0.05$\pm$0.14 & \textbf{0.05$\pm$0.11} & 0.00$\pm$0.02 & 0.02$\pm$0.06 & 0.00$\pm$0.00 \\
+uninet & 0.00$\pm$0.00 & \textbf{0.90$\pm$0.17} & \textbf{0.03$\pm$0.03} & 0.01$\pm$0.03 & 0.02$\pm$0.03 & 0.04$\pm$0.08 \\
+patchcore & \textbf{0.34$\pm$0.20} & 0.69$\pm$0.13 & \textbf{0.02$\pm$0.01} & \textbf{0.94$\pm$0.17} & \textbf{1.00$\pm$0.00} & \textbf{1.00$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Operating point with strict false positive control (1\% FPR). * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: calibration_transfer
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Calibration transfer analysis: $\Delta$TNR between training and test sets.}
+\label{tab:calibration-transfer}
+\begin{tabular}{lccccc}
+\toprule
+Model & Dataset & ΔTNR@0.99 & ΔTNR@0.95 & ΔTNR@0.90 & Comparable \\
+\midrule
+padim & engine_wiring & 0.0 & 0.02 & 0.04 & // \\
+efficientad & engine_wiring & -0.11 & -0.18 & -0.19 & // \\
+fastflow & engine_wiring & 0.0 & 0.01 & 0.02 & // \\
+reversedistillation & engine_wiring & -0.17 & -0.31 & -0.36 & // \\
+dinomaly & engine_wiring & -0.0 & 0.01 & 0.0 & // \\
+uflow & engine_wiring & -0.01 & -0.01 & -0.0 & // \\
+supersimplenet & engine_wiring & -0.02 & -0.01 & -0.0 & // \\
+uninet & engine_wiring & 0.01 & 0.04 & 0.07 & // \\
+patchcore & engine_wiring & -0.23 & -0.44 & -0.49 & // \\
+padim & pipe_clip & -0.0 & 0.01 & 0.02 & // \\
+efficientad & pipe_clip & -0.0 & -0.03 & -0.04 & // \\
+fastflow & pipe_clip & 0.0 & 0.03 & 0.06 & // \\
+reversedistillation & pipe_clip & -0.22 & -0.67 & -0.77 & // \\
+dinomaly & pipe_clip & -0.05 & -0.05 & -0.05 & // \\
+uflow & pipe_clip & -0.0 & 0.0 & 0.02 & // \\
+supersimplenet & pipe_clip & -0.0 & -0.01 & -0.02 & // \\
+uninet & pipe_clip & -0.41 & -0.48 & -0.5 & // \\
+patchcore & pipe_clip & -0.44 & -0.61 & -0.73 & // \\
+padim & pipe_staple & -0.01 & -0.02 & -0.03 & // \\
+efficientad & pipe_staple & -0.13 & -0.25 & -0.24 & // \\
+fastflow & pipe_staple & -0.0 & 0.01 & 0.04 & // \\
+reversedistillation & pipe_staple & -0.01 & -0.04 & -0.04 & // \\
+dinomaly & pipe_staple & 0.01 & 0.04 & 0.08 & // \\
+uflow & pipe_staple & 0.01 & 0.02 & -0.02 & // \\
+supersimplenet & pipe_staple & -0.01 & -0.01 & 0.02 & // \\
+uninet & pipe_staple & -0.01 & -0.02 & -0.02 & // \\
+patchcore & pipe_staple & 0.01 & 0.04 & 0.07 & // \\
+padim & tank_screw & 0.01 & 0.04 & 0.05 & // \\
+efficientad & tank_screw & 0.0 & 0.02 & 0.05 & // \\
+fastflow & tank_screw & 0.01 & 0.05 & 0.1 & // \\
+reversedistillation & tank_screw & 0.01 & 0.05 & 0.1 & // \\
+dinomaly & tank_screw & -0.01 & -0.03 & -0.03 & // \\
+uflow & tank_screw & 0.0 & 0.02 & 0.02 & // \\
+supersimplenet & tank_screw & 0.01 & 0.01 & 0.02 & // \\
+uninet & tank_screw & -0.01 & -0.01 & -0.03 & // \\
+patchcore & tank_screw & -0.58 & -0.71 & -0.73 & // \\
+padim & underbody_pipes & -0.01 & 0.01 & 0.05 & // \\
+efficientad & underbody_pipes & -0.1 & -0.28 & -0.35 & // \\
+fastflow & underbody_pipes & 0.01 & 0.05 & 0.07 & // \\
+reversedistillation & underbody_pipes & -0.14 & -0.54 & -0.69 & // \\
+dinomaly & underbody_pipes & 0.01 & 0.01 & 0.03 & // \\
+uflow & underbody_pipes & -0.02 & 0.0 & 0.03 & // \\
+supersimplenet & underbody_pipes & -0.02 & -0.06 & -0.05 & // \\
+uninet & underbody_pipes & -0.08 & -0.12 & -0.12 & // \\
+patchcore & underbody_pipes & -0.83 & -0.93 & -0.9 & // \\
+padim & underbody_screw & 0.01 & 0.05 & 0.1 & // \\
+efficientad & underbody_screw & 0.01 & 0.03 & 0.07 & // \\
+fastflow & underbody_screw & 0.01 & 0.05 & 0.1 & // \\
+reversedistillation & underbody_screw & -0.02 & -0.03 & -0.03 & // \\
+dinomaly & underbody_screw & 0.01 & 0.04 & 0.08 & // \\
+uflow & underbody_screw & 0.01 & 0.05 & 0.1 & // \\
+supersimplenet & underbody_screw & 0.01 & 0.05 & 0.1 & // \\
+uninet & underbody_screw & 0.01 & 0.04 & 0.09 & // \\
+patchcore & underbody_screw & -0.18 & -0.5 & -0.56 & // \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values show mean $\Delta$TNR = Test\_TNR - Target\_TNR across seeds. Comparable: $\checkmark$ if $|\Delta\text{TNR}| \leq 0.03$ (99\%) or $\leq 0.05$ (95\%/90\%), $\times$ otherwise.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: class_difficulty_ranking
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Dataset difficulty ranking based on model performance.}
+\label{tab:class-difficulty-ranking}
+\begin{tabular}{lccc}
+\toprule
+Dataset & Avg\_Rank & Best\_Score & Worst\_Score \\
+\midrule
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$g$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$g$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$k$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$b$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$y$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$b$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$y$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Average rank computed across all models for each dataset using AUsPRO@0.05. Higher average rank indicates more challenging datasets. Best/worst scores show performance range.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: computational_efficiency
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Computational requirements and efficiency metrics.}
+\label{tab:computational-efficiency}
+\begin{tabular}{lcccc}
+\toprule
+Model & Dataset & Time\_per\_img\_sec & Perf\_per\_min & Peak\_GB \\
+\midrule
+padim & engine_wiring & 0.66 & 0.0 & 6.3 \\
+efficientad & engine_wiring & 9.31 & 0.0 & 6.3 \\
+fastflow & engine_wiring & 2.4 & 0.0 & 8.8 \\
+reversedistillation & engine_wiring & 4.33 & 0.01 & 8.8 \\
+dinomaly & engine_wiring & 0.84 & 0.01 & 10.4 \\
+padim & pipe_clip & 0.57 & 0.01 & 10.4 \\
+efficientad & pipe_clip & 10.19 & 0.0 & 10.4 \\
+fastflow & pipe_clip & 3.19 & 0.0 & 10.4 \\
+reversedistillation & pipe_clip & 5.59 & 0.01 & 10.4 \\
+dinomaly & pipe_clip & 0.98 & 0.01 & 10.4 \\
+padim & pipe_staple & 0.46 & 0.0 & 10.4 \\
+efficientad & pipe_staple & 10.08 & 0.0 & 10.4 \\
+fastflow & pipe_staple & 3.0 & 0.0 & 10.4 \\
+reversedistillation & pipe_staple & 5.51 & 0.0 & 10.4 \\
+dinomaly & pipe_staple & 0.95 & 0.0 & 10.4 \\
+padim & tank_screw & 0.56 & 0.0 & 10.4 \\
+efficientad & tank_screw & 25.78 & 0.0 & 10.4 \\
+fastflow & tank_screw & 7.96 & 0.0 & 10.4 \\
+reversedistillation & tank_screw & 11.82 & 0.0 & 10.4 \\
+dinomaly & tank_screw & 1.83 & 0.0 & 10.4 \\
+padim & underbody_pipes & 1.1 & 0.22 & 10.4 \\
+efficientad & underbody_pipes & 28.17 & 0.0 & 10.4 \\
+fastflow & underbody_pipes & 10.34 & 0.0 & 10.4 \\
+reversedistillation & underbody_pipes & 15.08 & 0.02 & 10.4 \\
+dinomaly & underbody_pipes & 3.22 & 0.1 & 10.4 \\
+padim & underbody_screw & 0.38 & 0.0 & 10.4 \\
+efficientad & underbody_screw & 21.88 & 0.0 & 10.4 \\
+fastflow & underbody_screw & 7.98 & 0.0 & 10.4 \\
+reversedistillation & underbody_screw & 11.23 & 0.01 & 10.4 \\
+dinomaly & underbody_screw & 1.09 & 0.0 & 10.4 \\
+padim & engine_wiring_estimate_depth & 0.72 & 0.0 & 10.4 \\
+efficientad & engine_wiring_estimate_depth & 9.06 & 0.01 & 10.4 \\
+fastflow & engine_wiring_estimate_depth & 2.03 & 0.0 & 10.4 \\
+reversedistillation & engine_wiring_estimate_depth & 3.83 & 0.0 & 10.4 \\
+dinomaly & engine_wiring_estimate_depth & 0.83 & 0.02 & 10.4 \\
+padim & pipe_clip_estimate_depth & 0.52 & 0.0 & 10.4 \\
+efficientad & pipe_clip_estimate_depth & 8.93 & 0.02 & 10.4 \\
+fastflow & pipe_clip_estimate_depth & 2.01 & 0.0 & 10.4 \\
+reversedistillation & pipe_clip_estimate_depth & 4.37 & 0.0 & 10.4 \\
+dinomaly & pipe_clip_estimate_depth & 0.93 & 0.02 & 10.4 \\
+padim & pipe_staple_estimate_depth & 0.46 & 0.0 & 10.4 \\
+efficientad & pipe_staple_estimate_depth & 8.88 & 0.01 & 10.4 \\
+fastflow & pipe_staple_estimate_depth & 1.99 & 0.0 & 10.4 \\
+reversedistillation & pipe_staple_estimate_depth & 4.76 & 0.0 & 10.4 \\
+dinomaly & pipe_staple_estimate_depth & 0.85 & 0.01 & 10.4 \\
+padim & tank_screw_estimate_depth & 0.54 & 0.0 & 10.4 \\
+efficientad & tank_screw_estimate_depth & 24.2 & 0.0 & 10.4 \\
+fastflow & tank_screw_estimate_depth & 6.3 & 0.0 & 10.4 \\
+reversedistillation & tank_screw_estimate_depth & 9.97 & 0.0 & 10.4 \\
+dinomaly & tank_screw_estimate_depth & 1.56 & 0.0 & 10.4 \\
+padim & underbody_pipes_estimate_depth & 1.0 & 0.0 & 10.4 \\
+efficientad & underbody_pipes_estimate_depth & 25.62 & 0.01 & 10.4 \\
+fastflow & underbody_pipes_estimate_depth & 7.71 & N/A & 10.4 \\
+reversedistillation & underbody_pipes_estimate_depth & 12.52 & 0.0 & 10.4 \\
+dinomaly & underbody_pipes_estimate_depth & 2.21 & 0.0 & 10.4 \\
+padim & underbody_screw_estimate_depth & 0.3 & 0.0 & 10.4 \\
+efficientad & underbody_screw_estimate_depth & 22.9 & 0.0 & 10.4 \\
+fastflow & underbody_screw_estimate_depth & 5.11 & 0.0 & 10.4 \\
+reversedistillation & underbody_screw_estimate_depth & 8.19 & 0.0 & 10.4 \\
+dinomaly & underbody_screw_estimate_depth & 0.88 & 0.0 & 10.4 \\
+padim & engine_wiring & 0.67 & 0.0 & 6.3 \\
+efficientad & engine_wiring & 9.3 & 0.0 & 6.3 \\
+fastflow & engine_wiring & 2.41 & 0.0 & 8.8 \\
+reversedistillation & engine_wiring & 4.3 & 0.01 & 8.8 \\
+dinomaly & engine_wiring & 1.1 & 0.01 & 10.4 \\
+padim & pipe_clip & 0.55 & 0.01 & 10.4 \\
+efficientad & pipe_clip & 10.16 & 0.0 & 10.4 \\
+fastflow & pipe_clip & 3.19 & 0.0 & 10.4 \\
+reversedistillation & pipe_clip & 5.74 & 0.01 & 10.4 \\
+dinomaly & pipe_clip & 0.97 & 0.0 & 10.4 \\
+padim & pipe_staple & 0.52 & 0.0 & 10.4 \\
+efficientad & pipe_staple & 10.13 & 0.0 & 10.4 \\
+fastflow & pipe_staple & 2.99 & 0.0 & 10.4 \\
+reversedistillation & pipe_staple & 5.8 & 0.0 & 10.4 \\
+dinomaly & pipe_staple & 0.99 & 0.0 & 10.4 \\
+padim & tank_screw & 0.52 & 0.01 & 10.4 \\
+efficientad & tank_screw & 25.88 & 0.0 & 10.4 \\
+fastflow & tank_screw & 7.95 & 0.0 & 10.4 \\
+reversedistillation & tank_screw & 11.92 & 0.0 & 10.4 \\
+dinomaly & tank_screw & 1.82 & 0.0 & 10.4 \\
+padim & underbody_pipes & 1.1 & 0.25 & 10.4 \\
+efficientad & underbody_pipes & 28.21 & 0.0 & 10.4 \\
+fastflow & underbody_pipes & 10.38 & 0.0 & 10.4 \\
+reversedistillation & underbody_pipes & 15.29 & 0.02 & 10.4 \\
+dinomaly & underbody_pipes & 3.08 & 0.12 & 10.4 \\
+padim & underbody_screw & 0.39 & 0.0 & 10.4 \\
+efficientad & underbody_screw & 26.0 & 0.0 & 10.4 \\
+fastflow & underbody_screw & 8.0 & 0.0 & 10.4 \\
+reversedistillation & underbody_screw & 11.23 & 0.01 & 10.4 \\
+dinomaly & underbody_screw & 1.1 & 0.0 & 10.4 \\
+padim & engine_wiring_estimate_depth & 0.71 & 0.0 & 10.4 \\
+efficientad & engine_wiring_estimate_depth & 9.02 & 0.01 & 10.4 \\
+fastflow & engine_wiring_estimate_depth & 2.08 & 0.0 & 10.4 \\
+reversedistillation & engine_wiring_estimate_depth & 3.98 & 0.0 & 10.4 \\
+dinomaly & engine_wiring_estimate_depth & 0.97 & 0.01 & 10.4 \\
+padim & pipe_clip_estimate_depth & 0.52 & 0.0 & 10.4 \\
+efficientad & pipe_clip_estimate_depth & 8.94 & 0.02 & 10.4 \\
+fastflow & pipe_clip_estimate_depth & 2.01 & 0.0 & 10.4 \\
+reversedistillation & pipe_clip_estimate_depth & 4.14 & 0.0 & 10.4 \\
+dinomaly & pipe_clip_estimate_depth & 0.84 & 0.01 & 10.4 \\
+padim & pipe_staple_estimate_depth & 0.45 & 0.0 & 10.4 \\
+efficientad & pipe_staple_estimate_depth & 8.88 & 0.01 & 10.4 \\
+fastflow & pipe_staple_estimate_depth & 1.99 & 0.0 & 10.4 \\
+reversedistillation & pipe_staple_estimate_depth & 4.46 & 0.0 & 10.4 \\
+dinomaly & pipe_staple_estimate_depth & 0.86 & 0.01 & 10.4 \\
+padim & tank_screw_estimate_depth & 0.53 & 0.0 & 10.4 \\
+efficientad & tank_screw_estimate_depth & 24.26 & 0.0 & 10.4 \\
+fastflow & tank_screw_estimate_depth & 6.32 & 0.0 & 10.4 \\
+reversedistillation & tank_screw_estimate_depth & 9.92 & 0.0 & 10.4 \\
+dinomaly & tank_screw_estimate_depth & 1.43 & 0.0 & 10.4 \\
+padim & underbody_pipes_estimate_depth & 0.97 & 0.02 & 10.4 \\
+efficientad & underbody_pipes_estimate_depth & 25.66 & 0.01 & 10.4 \\
+fastflow & underbody_pipes_estimate_depth & 7.78 & 0.0 & 10.4 \\
+reversedistillation & underbody_pipes_estimate_depth & 12.75 & 0.0 & 10.4 \\
+dinomaly & underbody_pipes_estimate_depth & 2.27 & 0.0 & 10.4 \\
+padim & underbody_screw_estimate_depth & 0.29 & 0.0 & 10.4 \\
+efficientad & underbody_screw_estimate_depth & 22.92 & 0.0 & 10.4 \\
+fastflow & underbody_screw_estimate_depth & 4.7 & 0.0 & 10.4 \\
+reversedistillation & underbody_screw_estimate_depth & 8.22 & 0.0 & 10.4 \\
+dinomaly & underbody_screw_estimate_depth & 0.78 & 0.01 & 10.4 \\
+padim & engine_wiring & 0.65 & 0.01 & 10.4 \\
+efficientad & engine_wiring & 9.39 & 0.0 & 10.4 \\
+fastflow & engine_wiring & 2.41 & 0.0 & 10.4 \\
+reversedistillation & engine_wiring & 4.25 & 0.01 & 10.4 \\
+dinomaly & engine_wiring & 0.83 & 0.01 & 10.4 \\
+padim & pipe_clip & 0.54 & 0.02 & 10.4 \\
+efficientad & pipe_clip & 10.22 & 0.0 & 10.4 \\
+fastflow & pipe_clip & 3.21 & 0.0 & 10.4 \\
+reversedistillation & pipe_clip & 5.77 & 0.02 & 10.4 \\
+dinomaly & pipe_clip & 0.78 & 0.0 & 10.4 \\
+padim & pipe_staple & 0.53 & 0.0 & 10.4 \\
+efficientad & pipe_staple & 10.19 & 0.0 & 10.4 \\
+fastflow & pipe_staple & 2.97 & 0.0 & 10.4 \\
+reversedistillation & pipe_staple & 5.5 & 0.0 & 10.4 \\
+dinomaly & pipe_staple & 0.9 & 0.0 & 10.4 \\
+padim & tank_screw & 0.57 & 0.0 & 10.4 \\
+efficientad & tank_screw & 25.97 & 0.0 & 10.4 \\
+fastflow & tank_screw & 8.09 & 0.0 & 10.4 \\
+reversedistillation & tank_screw & 11.74 & 0.0 & 10.4 \\
+dinomaly & tank_screw & 1.81 & 0.0 & 10.4 \\
+padim & underbody_pipes & 0.96 & 0.32 & 10.4 \\
+efficientad & underbody_pipes & 28.22 & 0.0 & 10.4 \\
+fastflow & underbody_pipes & 10.36 & 0.0 & 10.4 \\
+reversedistillation & underbody_pipes & 14.85 & 0.02 & 10.4 \\
+dinomaly & underbody_pipes & 2.9 & 0.12 & 10.4 \\
+padim & underbody_screw & 0.37 & 0.0 & 10.4 \\
+efficientad & underbody_screw & 25.94 & 0.0 & 10.4 \\
+fastflow & underbody_screw & 7.99 & 0.0 & 10.4 \\
+reversedistillation & underbody_screw & 11.25 & 0.01 & 10.4 \\
+dinomaly & underbody_screw & 1.36 & 0.0 & 10.4 \\
+padim & engine_wiring_estimate_depth & 0.73 & 0.0 & 10.4 \\
+efficientad & engine_wiring_estimate_depth & 9.09 & 0.01 & 10.4 \\
+fastflow & engine_wiring_estimate_depth & 2.11 & 0.0 & 10.4 \\
+reversedistillation & engine_wiring_estimate_depth & 3.95 & 0.0 & 10.4 \\
+dinomaly & engine_wiring_estimate_depth & 0.9 & 0.01 & 10.4 \\
+padim & pipe_clip_estimate_depth & 0.55 & 0.0 & 10.4 \\
+efficientad & pipe_clip_estimate_depth & 9.06 & 0.01 & 10.4 \\
+fastflow & pipe_clip_estimate_depth & 1.97 & 0.0 & 10.4 \\
+reversedistillation & pipe_clip_estimate_depth & 4.69 & 0.0 & 10.4 \\
+dinomaly & pipe_clip_estimate_depth & 0.56 & 0.01 & 10.4 \\
+padim & pipe_staple_estimate_depth & 0.46 & 0.0 & 10.4 \\
+efficientad & pipe_staple_estimate_depth & 8.86 & 0.01 & 10.4 \\
+fastflow & pipe_staple_estimate_depth & 1.99 & 0.0 & 10.4 \\
+reversedistillation & pipe_staple_estimate_depth & 4.5 & 0.0 & 10.4 \\
+dinomaly & pipe_staple_estimate_depth & 0.64 & 0.02 & 10.4 \\
+padim & tank_screw_estimate_depth & 0.51 & 0.0 & 10.4 \\
+efficientad & tank_screw_estimate_depth & 24.2 & 0.0 & 10.4 \\
+fastflow & tank_screw_estimate_depth & 6.18 & 0.0 & 10.4 \\
+reversedistillation & tank_screw_estimate_depth & 9.99 & 0.0 & 10.4 \\
+dinomaly & tank_screw_estimate_depth & 1.32 & 0.0 & 10.4 \\
+padim & underbody_pipes_estimate_depth & 0.98 & 0.13 & 10.4 \\
+efficientad & underbody_pipes_estimate_depth & 25.63 & 0.01 & 10.4 \\
+fastflow & underbody_pipes_estimate_depth & 7.74 & 0.0 & 10.4 \\
+reversedistillation & underbody_pipes_estimate_depth & 12.98 & 0.0 & 10.4 \\
+dinomaly & underbody_pipes_estimate_depth & 2.8 & 0.13 & 10.4 \\
+padim & underbody_screw_estimate_depth & 0.31 & 0.0 & 10.4 \\
+efficientad & underbody_screw_estimate_depth & 23.06 & 0.0 & 10.4 \\
+fastflow & underbody_screw_estimate_depth & 5.05 & N/A & 10.4 \\
+reversedistillation & underbody_screw_estimate_depth & 8.54 & 0.0 & 10.4 \\
+dinomaly & underbody_screw_estimate_depth & 0.84 & 0.0 & 10.4 \\
+uflow & engine_wiring & 2.84 & 0.0 & 11.5 \\
+supersimplenet & engine_wiring & 5.29 & 0.0 & 11.5 \\
+uninet & engine_wiring & 13.92 & 0.0 & 19.4 \\
+uflow & pipe_clip & 17.76 & 0.0 & 19.4 \\
+supersimplenet & pipe_clip & 6.16 & 0.0 & 19.4 \\
+uninet & pipe_clip & 17.02 & 0.01 & 19.4 \\
+uflow & pipe_staple & 17.14 & 0.0 & 19.4 \\
+supersimplenet & pipe_staple & 6.0 & 0.0 & 19.4 \\
+uninet & pipe_staple & 17.19 & 0.0 & 19.4 \\
+uflow & tank_screw & 17.16 & 0.0 & 19.4 \\
+supersimplenet & tank_screw & 11.13 & 0.0 & 19.4 \\
+uninet & tank_screw & 49.81 & 0.0 & 20.2 \\
+uflow & underbody_pipes & 3.12 & 0.01 & 20.2 \\
+supersimplenet & underbody_pipes & 15.02 & 0.0 & 20.2 \\
+uninet & underbody_pipes & 55.42 & 0.0 & 20.2 \\
+uflow & underbody_screw & 16.39 & 0.0 & 20.2 \\
+supersimplenet & underbody_screw & 9.3 & 0.0 & 20.2 \\
+uninet & underbody_screw & 49.08 & 0.0 & 20.2 \\
+uflow & engine_wiring_estimate_depth & 2.71 & 0.0 & 20.2 \\
+supersimplenet & engine_wiring_estimate_depth & 4.82 & 0.0 & 20.2 \\
+uninet & engine_wiring_estimate_depth & 13.97 & 0.0 & 20.2 \\
+uflow & pipe_clip_estimate_depth & 17.8 & 0.0 & 20.2 \\
+supersimplenet & pipe_clip_estimate_depth & 5.1 & 0.01 & 20.2 \\
+uninet & pipe_clip_estimate_depth & 15.95 & 0.0 & 20.2 \\
+uflow & pipe_staple_estimate_depth & 15.87 & 0.0 & 20.2 \\
+supersimplenet & pipe_staple_estimate_depth & 4.77 & 0.0 & 20.2 \\
+uninet & pipe_staple_estimate_depth & 14.86 & 0.0 & 20.2 \\
+uflow & tank_screw_estimate_depth & 14.59 & 0.0 & 20.2 \\
+supersimplenet & tank_screw_estimate_depth & 7.93 & 0.0 & 20.2 \\
+uninet & tank_screw_estimate_depth & 46.75 & 0.0 & 20.2 \\
+uflow & underbody_pipes_estimate_depth & 2.71 & 0.0 & 20.2 \\
+supersimplenet & underbody_pipes_estimate_depth & 9.96 & 0.0 & 20.2 \\
+uninet & underbody_pipes_estimate_depth & 51.62 & 0.0 & 20.2 \\
+uflow & underbody_screw_estimate_depth & 13.05 & 0.0 & 20.2 \\
+supersimplenet & underbody_screw_estimate_depth & 7.35 & 0.0 & 20.2 \\
+uninet & underbody_screw_estimate_depth & 45.34 & 0.0 & 20.2 \\
+uflow & engine_wiring & 2.86 & 0.0 & 11.5 \\
+supersimplenet & engine_wiring & 2.98 & 0.01 & 11.5 \\
+uninet & engine_wiring & 14.12 & 0.0 & 19.4 \\
+uflow & pipe_clip & 18.21 & 0.0 & 19.4 \\
+supersimplenet & pipe_clip & 6.07 & 0.0 & 19.4 \\
+uninet & pipe_clip & 16.76 & 0.01 & 19.4 \\
+uflow & pipe_staple & 16.14 & 0.0 & 19.4 \\
+supersimplenet & pipe_staple & 5.95 & 0.0 & 19.4 \\
+uninet & pipe_staple & 17.36 & 0.0 & 19.4 \\
+uflow & tank_screw & 17.13 & 0.0 & 19.4 \\
+supersimplenet & tank_screw & 14.43 & 0.0 & 19.4 \\
+uninet & tank_screw & 50.09 & 0.0 & 20.2 \\
+uflow & underbody_pipes & 3.62 & 0.0 & 20.2 \\
+supersimplenet & underbody_pipes & 19.12 & 0.0 & 20.2 \\
+uninet & underbody_pipes & 56.08 & 0.0 & 20.2 \\
+uflow & underbody_screw & 16.38 & 0.0 & 20.2 \\
+supersimplenet & underbody_screw & 11.8 & 0.0 & 20.2 \\
+uninet & underbody_screw & 49.3 & 0.0 & 20.2 \\
+uflow & engine_wiring_estimate_depth & 2.55 & 0.0 & 20.2 \\
+supersimplenet & engine_wiring_estimate_depth & 4.14 & 0.0 & 20.2 \\
+uninet & engine_wiring_estimate_depth & 14.05 & 0.0 & 20.2 \\
+uflow & pipe_clip_estimate_depth & 17.52 & 0.0 & 20.2 \\
+supersimplenet & pipe_clip_estimate_depth & 5.16 & 0.0 & 20.2 \\
+uninet & pipe_clip_estimate_depth & 15.7 & 0.0 & 20.2 \\
+uflow & pipe_staple_estimate_depth & 15.87 & 0.0 & 20.2 \\
+supersimplenet & pipe_staple_estimate_depth & 5.11 & 0.0 & 20.2 \\
+uninet & pipe_staple_estimate_depth & 16.14 & 0.0 & 20.2 \\
+uflow & tank_screw_estimate_depth & 14.66 & 0.0 & 20.2 \\
+supersimplenet & tank_screw_estimate_depth & 10.16 & 0.0 & 20.2 \\
+uninet & tank_screw_estimate_depth & 48.38 & 0.0 & 20.2 \\
+uflow & underbody_pipes_estimate_depth & 2.79 & 0.0 & 20.2 \\
+supersimplenet & underbody_pipes_estimate_depth & 11.23 & 0.0 & 20.2 \\
+uninet & underbody_pipes_estimate_depth & 53.53 & 0.0 & 20.2 \\
+uflow & underbody_screw_estimate_depth & 13.71 & 0.0 & 20.2 \\
+supersimplenet & underbody_screw_estimate_depth & 6.55 & 0.0 & 20.2 \\
+uninet & underbody_screw_estimate_depth & 46.71 & 0.0 & 20.2 \\
+uflow & engine_wiring & 2.6 & 0.01 & 20.2 \\
+supersimplenet & engine_wiring & 2.76 & 0.0 & 20.2 \\
+uninet & engine_wiring & 14.29 & 0.0 & 20.2 \\
+uflow & pipe_clip & 18.0 & 0.0 & 20.2 \\
+supersimplenet & pipe_clip & 6.13 & 0.0 & 20.2 \\
+uninet & pipe_clip & 17.28 & 0.01 & 20.2 \\
+uflow & pipe_staple & 16.15 & 0.0 & 20.2 \\
+supersimplenet & pipe_staple & 5.97 & 0.0 & 20.2 \\
+uninet & pipe_staple & 17.27 & 0.0 & 20.2 \\
+uflow & tank_screw & 17.23 & 0.0 & 20.2 \\
+supersimplenet & tank_screw & 13.54 & 0.0 & 20.2 \\
+uninet & tank_screw & 49.42 & 0.0 & 20.2 \\
+uflow & underbody_pipes & 3.07 & 0.0 & 20.2 \\
+supersimplenet & underbody_pipes & 15.61 & 0.0 & 20.2 \\
+uninet & underbody_pipes & 53.49 & 0.0 & 20.2 \\
+uflow & underbody_screw & 15.9 & 0.0 & 20.2 \\
+supersimplenet & underbody_screw & 6.88 & 0.0 & 20.2 \\
+uninet & underbody_screw & 47.55 & 0.0 & 20.2 \\
+uflow & engine_wiring_estimate_depth & 2.58 & 0.0 & 20.2 \\
+supersimplenet & engine_wiring_estimate_depth & 4.73 & 0.0 & 20.2 \\
+uninet & engine_wiring_estimate_depth & 12.98 & 0.0 & 20.2 \\
+uflow & pipe_clip_estimate_depth & 16.03 & 0.0 & 20.2 \\
+supersimplenet & pipe_clip_estimate_depth & 4.88 & 0.01 & 20.2 \\
+uninet & pipe_clip_estimate_depth & 14.94 & 0.0 & 20.2 \\
+uflow & pipe_staple_estimate_depth & 15.98 & 0.0 & 20.2 \\
+supersimplenet & pipe_staple_estimate_depth & 4.82 & 0.0 & 20.2 \\
+uninet & pipe_staple_estimate_depth & 15.32 & 0.0 & 20.2 \\
+uflow & tank_screw_estimate_depth & 14.76 & 0.0 & 20.2 \\
+supersimplenet & tank_screw_estimate_depth & 9.51 & 0.0 & 20.2 \\
+uninet & tank_screw_estimate_depth & 46.95 & 0.0 & 20.2 \\
+uflow & underbody_pipes_estimate_depth & 2.71 & 0.0 & 20.2 \\
+supersimplenet & underbody_pipes_estimate_depth & 15.72 & 0.0 & 20.2 \\
+uninet & underbody_pipes_estimate_depth & 51.63 & 0.0 & 20.2 \\
+uflow & underbody_screw_estimate_depth & 13.17 & 0.0 & 20.2 \\
+supersimplenet & underbody_screw_estimate_depth & 6.67 & 0.0 & 20.2 \\
+uninet & underbody_screw_estimate_depth & 45.51 & 0.0 & 20.2 \\
+patchcore & engine_wiring & 3.2 & 0.03 & 2.9 \\
+patchcore & pipe_clip & 2.31 & 0.11 & 3.1 \\
+patchcore & pipe_staple & 20.16 & 0.0 & 3.1 \\
+patchcore & engine_wiring & 2.68 & 0.03 & 3.1 \\
+patchcore & pipe_clip & 1.91 & 0.14 & 3.1 \\
+patchcore & pipe_staple & 1.79 & 0.0 & 3.1 \\
+patchcore & engine_wiring & 2.66 & 0.03 & 3.1 \\
+patchcore & pipe_clip & 1.9 & 0.15 & 3.1 \\
+patchcore & pipe_staple & 1.75 & 0.0 & 3.1 \\
+patchcore & tank_screw & 5.81 & 0.06 & 5.4 \\
+patchcore & underbody_pipes & 5.56 & 0.11 & 5.7 \\
+patchcore & underbody_screw & 5.09 & 0.11 & 5.7 \\
+patchcore & tank_screw & 5.66 & 0.06 & 5.7 \\
+patchcore & underbody_pipes & 5.68 & 0.1 & 5.7 \\
+patchcore & underbody_screw & 5.12 & 0.11 & 5.7 \\
+patchcore & tank_screw & 5.67 & 0.07 & 5.7 \\
+patchcore & underbody_pipes & 5.73 & 0.11 & 5.7 \\
+patchcore & underbody_screw & 5.1 & 0.12 & 5.7 \\
+patchcore & engine_wiring_estimate_depth & 3.24 & 0.0 & 2.9 \\
+patchcore & pipe_clip_estimate_depth & 2.07 & 0.0 & 3.1 \\
+patchcore & pipe_staple_estimate_depth & 1.87 & 0.0 & 3.1 \\
+patchcore & engine_wiring_estimate_depth & 2.72 & 0.0 & 3.1 \\
+patchcore & pipe_clip_estimate_depth & 1.85 & 0.0 & 3.1 \\
+patchcore & pipe_staple_estimate_depth & 1.71 & 0.0 & 3.1 \\
+patchcore & engine_wiring_estimate_depth & 2.7 & 0.0 & 3.1 \\
+patchcore & pipe_clip_estimate_depth & 1.85 & 0.0 & 3.1 \\
+patchcore & pipe_staple_estimate_depth & 1.75 & 0.0 & 3.1 \\
+patchcore & tank_screw_estimate_depth & 5.79 & 0.01 & 5.4 \\
+patchcore & underbody_pipes_estimate_depth & 4.86 & 0.06 & 5.7 \\
+patchcore & underbody_screw_estimate_depth & 4.59 & 0.0 & 5.7 \\
+patchcore & tank_screw_estimate_depth & 5.05 & 0.01 & 5.7 \\
+patchcore & underbody_pipes_estimate_depth & 5.03 & 0.06 & 5.7 \\
+patchcore & underbody_screw_estimate_depth & 4.42 & 0.0 & 5.7 \\
+patchcore & tank_screw_estimate_depth & 5.04 & 0.01 & 5.7 \\
+patchcore & underbody_pipes_estimate_depth & 5.03 & 0.07 & 5.7 \\
+patchcore & underbody_screw_estimate_depth & 4.37 & 0.0 & 5.7 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Time per image in seconds, performance per minute (AUsPRO/training\_time), and peak GPU memory usage in GB. Lower time and memory with higher performance indicates better efficiency.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: image_pixel_correlation
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Correlation between image-level and pixel-level performance metrics.}
+\label{tab:image-pixel-correlation}
+\begin{tabular}{lcc}
+\toprule
+Dataset & Spearman\_AUROC\_AUsPRO & Spearman\_AP\_AUsPRO \\
+\midrule
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$g$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$g$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$7$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$7$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$7$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$-$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$8$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$-$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$k$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$b$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$y$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$7$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$b$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$y$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$-$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$-$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Spearman correlation coefficients between image AUROC/AP and pixel AUsPRO computed across models per dataset. Higher correlations indicate consistent ranking between detection and localization.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: monotonicity_checks
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Monotonicity verification for operating points and test TNR values.}
+\label{tab:monotonicity-checks}
+\begin{tabular}{lcccc}
+\toprule
+Model & Dataset & Monotonic\_TPR & Monotonic\_TNR\_test & All\_OK \\
+\midrule
+padim & engine_wiring & N/A & N/A & N/A \\
+efficientad & engine_wiring & N/A & N/A & N/A \\
+fastflow & engine_wiring & N/A & N/A & N/A \\
+reversedistillation & engine_wiring & N/A & N/A & N/A \\
+dinomaly & engine_wiring & N/A & N/A & N/A \\
+uflow & engine_wiring & N/A & N/A & N/A \\
+supersimplenet & engine_wiring & N/A & N/A & N/A \\
+uninet & engine_wiring & N/A & N/A & N/A \\
+patchcore & engine_wiring & N/A & N/A & N/A \\
+padim & pipe_clip & N/A & N/A & N/A \\
+efficientad & pipe_clip & N/A & N/A & N/A \\
+fastflow & pipe_clip & N/A & N/A & N/A \\
+reversedistillation & pipe_clip & N/A & N/A & N/A \\
+dinomaly & pipe_clip & N/A & N/A & N/A \\
+uflow & pipe_clip & N/A & N/A & N/A \\
+supersimplenet & pipe_clip & N/A & N/A & N/A \\
+uninet & pipe_clip & N/A & N/A & N/A \\
+patchcore & pipe_clip & N/A & N/A & N/A \\
+padim & pipe_staple & N/A & N/A & N/A \\
+efficientad & pipe_staple & N/A & N/A & N/A \\
+fastflow & pipe_staple & N/A & N/A & N/A \\
+reversedistillation & pipe_staple & N/A & N/A & N/A \\
+dinomaly & pipe_staple & N/A & N/A & N/A \\
+uflow & pipe_staple & N/A & N/A & N/A \\
+supersimplenet & pipe_staple & N/A & N/A & N/A \\
+uninet & pipe_staple & N/A & N/A & N/A \\
+patchcore & pipe_staple & N/A & N/A & N/A \\
+padim & tank_screw & N/A & N/A & N/A \\
+efficientad & tank_screw & N/A & N/A & N/A \\
+fastflow & tank_screw & N/A & N/A & N/A \\
+reversedistillation & tank_screw & N/A & N/A & N/A \\
+dinomaly & tank_screw & N/A & N/A & N/A \\
+uflow & tank_screw & N/A & N/A & N/A \\
+supersimplenet & tank_screw & N/A & N/A & N/A \\
+uninet & tank_screw & N/A & N/A & N/A \\
+patchcore & tank_screw & N/A & N/A & N/A \\
+padim & underbody_pipes & N/A & N/A & N/A \\
+efficientad & underbody_pipes & N/A & N/A & N/A \\
+fastflow & underbody_pipes & N/A & N/A & N/A \\
+reversedistillation & underbody_pipes & N/A & N/A & N/A \\
+dinomaly & underbody_pipes & N/A & N/A & N/A \\
+uflow & underbody_pipes & N/A & N/A & N/A \\
+supersimplenet & underbody_pipes & N/A & N/A & N/A \\
+uninet & underbody_pipes & N/A & N/A & N/A \\
+patchcore & underbody_pipes & N/A & N/A & N/A \\
+padim & underbody_screw & N/A & N/A & N/A \\
+efficientad & underbody_screw & N/A & N/A & N/A \\
+fastflow & underbody_screw & N/A & N/A & N/A \\
+reversedistillation & underbody_screw & N/A & N/A & N/A \\
+dinomaly & underbody_screw & N/A & N/A & N/A \\
+uflow & underbody_screw & N/A & N/A & N/A \\
+supersimplenet & underbody_screw & N/A & N/A & N/A \\
+uninet & underbody_screw & N/A & N/A & N/A \\
+patchcore & underbody_screw & N/A & N/A & N/A \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Monotonic TPR: $\checkmark$ if TPR@90\% $\geq$ TPR@95\% $\geq$ TPR@99\%. Monotonic TNR: $\checkmark$ if Test\_TNR(99\%) $\geq$ Test\_TNR(95\%) $\geq$ Test\_TNR(90\%). All OK: both conditions satisfied.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: operational_sensitivity
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Aggregated operational sensitivity across multiple operating points.}
+\label{tab:operational-sensitivity}
+\begin{tabular}{lcc}
+\toprule
+Model & Dataset & Mean\_TPR@TNR \\
+\midrule
+padim & engine_wiring & 0.06 \\
+efficientad & engine_wiring & 0.45 \\
+fastflow & engine_wiring & 0.06 \\
+reversedistillation & engine_wiring & 0.42 \\
+dinomaly & engine_wiring & 0.05 \\
+uflow & engine_wiring & 0.09 \\
+supersimplenet & engine_wiring & 0.13 \\
+uninet & engine_wiring & 0.03 \\
+patchcore & engine_wiring & 0.55 \\
+padim & pipe_clip & 0.05 \\
+efficientad & pipe_clip & 0.09 \\
+fastflow & pipe_clip & 0.03 \\
+reversedistillation & pipe_clip & 0.79 \\
+dinomaly & pipe_clip & 0.12 \\
+uflow & pipe_clip & 0.03 \\
+supersimplenet & pipe_clip & 0.15 \\
+uninet & pipe_clip & 0.95 \\
+patchcore & pipe_clip & 0.85 \\
+padim & pipe_staple & 0.08 \\
+efficientad & pipe_staple & 0.26 \\
+fastflow & pipe_staple & 0.08 \\
+reversedistillation & pipe_staple & 0.08 \\
+dinomaly & pipe_staple & 0.03 \\
+uflow & pipe_staple & 0.06 \\
+supersimplenet & pipe_staple & 0.11 \\
+uninet & pipe_staple & 0.08 \\
+patchcore & pipe_staple & 0.04 \\
+padim & tank_screw & 0.06 \\
+efficientad & tank_screw & 0.05 \\
+fastflow & tank_screw & 0.0 \\
+reversedistillation & tank_screw & 0.0 \\
+dinomaly & tank_screw & 0.1 \\
+uflow & tank_screw & 0.03 \\
+supersimplenet & tank_screw & 0.07 \\
+uninet & tank_screw & 0.07 \\
+patchcore & tank_screw & 0.97 \\
+padim & underbody_pipes & 0.07 \\
+efficientad & underbody_pipes & 0.67 \\
+fastflow & underbody_pipes & 0.01 \\
+reversedistillation & underbody_pipes & 0.96 \\
+dinomaly & underbody_pipes & 0.7 \\
+uflow & underbody_pipes & 0.1 \\
+supersimplenet & underbody_pipes & 0.07 \\
+uninet & underbody_pipes & 0.06 \\
+patchcore & underbody_pipes & 1.0 \\
+padim & underbody_screw & 0.02 \\
+efficientad & underbody_screw & 0.0 \\
+fastflow & underbody_screw & 0.03 \\
+reversedistillation & underbody_screw & 0.03 \\
+dinomaly & underbody_screw & 0.07 \\
+uflow & underbody_screw & 0.08 \\
+supersimplenet & underbody_screw & 0.0 \\
+uninet & underbody_screw & 0.1 \\
+patchcore & underbody_screw & 1.0 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Mean-TPR@TNR computed as average of TPR values at 99\%, 95\%, and 90\% TNR operating points. Higher values indicate better overall sensitivity under false positive control.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: sPRO_0_05_depth
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Standardized Per-Region Overlap (sPRO@0.05) for depth-enhanced images. Higher is better.}
+\label{tab:spro-0-05-depth}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring\_estimate\_depth & pipe\_clip\_estimate\_depth & pipe\_staple\_estimate\_depth & tank\_screw\_estimate\_depth & underbody\_pipes\_estimate\_depth & underbody\_screw\_estimate\_depth \\
+\midrule
+padim & 0.00$\pm$0.01 & 0.00$\pm$0.01 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & \textbf{0.22$\pm$0.64} & 0.00$\pm$0.00 \\
+efficientad & \textbf{0.45$\pm$0.09} & \textbf{0.70$\pm$0.10} & \textbf{0.45$\pm$0.06} & \textbf{0.46$\pm$0.03} & \textbf{0.72$\pm$0.04} & \textbf{0.11$\pm$0.06} \\
+fastflow & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 \\
+reversedistillation & 0.05$\pm$0.13 & 0.01$\pm$0.02 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.16$\pm$0.16 & 0.02$\pm$0.04 \\
+dinomaly & 0.12$\pm$0.18 & 0.07$\pm$0.13 & 0.07$\pm$0.02 & 0.01$\pm$0.01 & \textbf{0.34$\pm$1.32} & \textbf{0.05$\pm$0.22} \\
+uflow & 0.01$\pm$0.04 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.00$\pm$0.00 & 0.03$\pm$0.06 & 0.00$\pm$0.00 \\
+supersimplenet & 0.03$\pm$0.04 & 0.12$\pm$0.22 & 0.01$\pm$0.03 & 0.02$\pm$0.03 & 0.01$\pm$0.01 & 0.00$\pm$0.00 \\
+uninet & 0.01$\pm$0.03 & 0.05$\pm$0.05 & 0.05$\pm$0.03 & 0.20$\pm$0.22 & 0.01$\pm$0.01 & 0.00$\pm$0.00 \\
+patchcore & 0.01$\pm$0.00 & 0.02$\pm$0.00 & 0.00$\pm$0.00 & 0.19$\pm$0.08 & \textbf{0.75$\pm$0.09} & 0.00$\pm$0.00 \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. Results using estimated depth maps as additional input. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: sPRO_0_05_rgb
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Standardized Per-Region Overlap (sPRO@0.05) for RGB images. Higher is better.}
+\label{tab:spro-0-05-rgb}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Model & engine\_wiring & pipe\_clip & pipe\_staple & tank\_screw & underbody\_pipes & underbody\_screw \\
+\midrule
+padim & 0.02$\pm$0.09 & 0.07$\pm$0.05 & \textbf{0.00$\pm$0.00} & 0.03$\pm$0.07 & \textbf{0.92$\pm$0.10} & 0.00$\pm$0.00 \\
+efficientad & 0.16$\pm$0.05 & 0.14$\pm$0.23 & \textbf{0.23$\pm$0.25} & 0.02$\pm$0.05 & 0.42$\pm$0.02 & 0.08$\pm$0.20 \\
+fastflow & 0.00$\pm$0.00 & 0.00$\pm$0.00 & \textbf{0.00$\pm$0.00} & 0.00$\pm$0.00 & 0.00$\pm$0.01 & 0.00$\pm$0.00 \\
+reversedistillation & \textbf{0.29$\pm$0.10} & 0.47$\pm$0.07 & \textbf{0.00$\pm$0.00} & 0.15$\pm$0.04 & 0.92$\pm$0.01 & 0.88$\pm$0.04 \\
+dinomaly & 0.06$\pm$0.02 & 0.04$\pm$0.09 & \textbf{0.02$\pm$0.03} & 0.01$\pm$0.03 & 0.94$\pm$0.03 & 0.00$\pm$0.00 \\
+uflow & 0.06$\pm$0.16 & 0.00$\pm$0.00 & \textbf{0.01$\pm$0.01} & 0.01$\pm$0.01 & 0.04$\pm$0.12 & 0.01$\pm$0.05 \\
+supersimplenet & 0.09$\pm$0.19 & 0.07$\pm$0.05 & \textbf{0.00$\pm$0.01} & 0.00$\pm$0.00 & 0.06$\pm$0.18 & 0.01$\pm$0.03 \\
+uninet & 0.17$\pm$0.05 & 0.48$\pm$0.08 & \textbf{0.21$\pm$0.14} & 0.19$\pm$0.03 & 0.01$\pm$0.01 & 0.01$\pm$0.02 \\
+patchcore & \textbf{0.33$\pm$0.01} & \textbf{0.75$\pm$0.07} & \textbf{0.03$\pm$0.02} & \textbf{0.81$\pm$0.15} & \textbf{1.00$\pm$0.00} & \textbf{1.00$\pm$0.00} \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Values are mean $\pm$ std across $n$ seeds. sPRO measures pixel-level localization with region-based evaluation. * = Best result (not significantly different at 5\% level using Welch t-test).
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
+
+% Table: seed_robustness
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Robustness analysis across random seeds by model.}
+\label{tab:seed-robustness}
+\begin{tabular}{lcccc}
+\toprule
+Model & Std\_Image\_AUROC & CV\_Image\_AUROC & Std\_AUsPRO@0.05 & CV\_AUsPRO@0.05 \\
+\midrule
+padim & 0.14 & 0.23 & 0.19 & 2.78 \\
+efficientad & 0.13 & 0.2 & 0.16 & 0.89 \\
+fastflow & 0.08 & 0.14 & 0.0 & 2.45 \\
+reversedistillation & 0.14 & 0.23 & 0.23 & 1.52 \\
+dinomaly & 0.15 & 0.25 & 0.26 & 2.38 \\
+uflow & 0.07 & 0.13 & 0.01 & 2.22 \\
+supersimplenet & 0.11 & 0.17 & 0.03 & 1.58 \\
+uninet & 0.11 & 0.19 & 0.09 & 1.47 \\
+patchcore & 0.18 & 0.28 & 0.36 & 1.18 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Standard deviation (Std) and coefficient of variation (CV = std/mean) computed across all datasets and seeds. Lower values indicate more stable performance.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+% Table: winners_by_class
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Best performing models per dataset with significance testing.}
+\label{tab:winners-by-class}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lcccccc}
+\toprule
+Dataset & Image\_AUROC\_Winner & Image\_AUROC\_Score & Image\_AP\_AUPR\_Winner & Image\_AP\_AUPR\_Score & AUsPRO\@0.05\_Winner & AUsPRO\@0.05\_Score \\
+\midrule
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$g$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$g$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$f$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$f$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$8$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$f$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$f$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$7$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$8$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$8$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$k$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$7$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$4$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$b$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$y$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$1$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$5$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$3$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$b$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$d$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$y$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$_$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$w$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$8$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$u$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$s$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$i$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$l$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$n$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$8$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$6$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$a$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$t$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$h$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$c$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$o$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$r$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$e$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$\dagger$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ & $\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$9$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$\$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$p$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$m$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$$$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$.$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$0$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$2$\times$$$\times$\$\times$c$\times$h$\times$e$\times$c$\times$k$\times$m$\times$a$\times$r$\times$k$\times$$$\times$ \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Winner shows best model per metric. Score format: mean$\pm$std. $\dagger$ indicates significant difference from second-best (simplified threshold). Multiple metrics evaluated per dataset.
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+
