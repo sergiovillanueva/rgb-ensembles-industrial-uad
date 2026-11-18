@@ -1,14 +1,34 @@
 # RGB Ensemble Strategies for Unsupervised Industrial Anomaly Detection on the AutoVI Dataset
 
-This repository contains the source code and experimental results for reproducing the experiments presented in our paper.
+[![Paper](https://img.shields.io/badge/Paper-Electronics%202026-1F3864)](https://doi.org/10.3390/electronics15102077)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
 
-**Authors:** Sergio Villanueva, Emilio Soria-Olivas, Manuel Sanchez-Montanes
+Code and results of the paper
 
-## Overview
+> S. Villanueva López, E. Soria-Olivas, M. Sánchez-Montañés. *RGB Ensemble Strategies for Unsupervised Industrial
+> Anomaly Detection on the AutoVI Dataset.* Electronics **15**(10), 2077, 2026.
+> [doi:10.3390/electronics15102077](https://doi.org/10.3390/electronics15102077)
 
-We evaluate nine unsupervised anomaly detection (UAD) models on the AutoVI dataset (automotive inspection) and propose late-fusion ensemble strategies to improve detection and localization performance. AutoVI is a publicly available dataset introduced by Carvalho et al. (2024) in *Computers in Industry*.
+Real automotive inspection lines have cluttered backgrounds, changing light and objects left by operators (labels,
+cables, tape), and defective samples are too scarce to train a supervised detector. This study measures how far
+unsupervised anomaly detection gets on AutoVI, a public benchmark recorded on a car assembly line (Carvalho et al.,
+*Computers in Industry*, 2024), and what helps.
 
-**Models evaluated:** PatchCore, PaDiM, EfficientAD, FastFlow, Reverse Distillation, DiNomaly, U-Flow, SuperSimpleNet, UniNet
+## Findings
+
+- **Unified baselines.** RGB and pseudo-depth baselines for seven UAD models under one calibration and evaluation
+  policy: AUROC and AP, TPR at fixed TNR (the operating point a plant cares about), and pixel-level sPRO / AUsPRO at a
+  5% false-positive budget.
+- **Late fusion of calibrated RGB detectors** recovers pixel-level localization that no single model reaches, with no
+  extra training and no change to the models. Every flagged improvement has Cohen's d > 2 and is significant across
+  three seeds.
+- **Negative result worth knowing.** Adding monocular pseudo-depth (Depth Anything V2) through the same fusion makes
+  localization worse. The paper traces this to the relative scale of estimated depth combined with a parameter-free
+  aggregator.
+
+**Models in the code:** PatchCore, PaDiM, EfficientAD, FastFlow, Reverse Distillation, DiNomaly, U-Flow,
+SuperSimpleNet, UniNet (the paper reports a subset of seven).
 
 **Ensemble strategies:** Mean, Median, Max, Trimmed Mean, Rank Average (applied at both score and pixel-map levels)
 
@@ -135,7 +155,7 @@ python tables_to_latex.py
 └── results/                   # Pre-computed experimental results
 ```
 
-## Key Configuration
+## Configuration
 
 | Parameter | Value |
 |-----------|-------|
@@ -157,14 +177,32 @@ python tables_to_latex.py
 If you use this code, please cite:
 
 ```bibtex
-@article{villanueva2025rgb,
-  title={RGB Ensemble Strategies for Unsupervised Industrial Anomaly Detection on the {AutoVI} Dataset},
-  author={Villanueva, Sergio and Soria-Olivas, Emilio and Sanchez-Montanes, Manuel},
-  journal={Computers in Industry},
-  year={2025}
+@article{villanueva2026rgb,
+  title   = {{RGB} Ensemble Strategies for Unsupervised Industrial Anomaly Detection on the {AutoVI} Dataset},
+  author  = {Villanueva L{\'o}pez, Sergio and Soria-Olivas, Emilio and S{\'a}nchez-Monta{\~n}{\'e}s, Manuel},
+  journal = {Electronics},
+  volume  = {15},
+  number  = {10},
+  pages   = {2077},
+  year    = {2026},
+  doi     = {10.3390/electronics15102077}
 }
 ```
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details. AutoVI keeps its own license.
+
+## Related repositories
+
+This repository is one of five from my industrial PhD on anomaly detection for visual inspection (Universitat de València and Eines Vision Systems, 2026). All five work on frozen foundation-model features and do not train a network for each product.
+
+| Repository | Paper | Question |
+|---|---|---|
+| **rgb-ensembles-industrial-uad** (this one) | Electronics, 2026 | Does combining several detectors improve defect localization on a real automotive benchmark? |
+| [GaLAD_Gaussian_layered_AD](https://github.com/sergiovillanueva/GaLAD_Gaussian_layered_AD) | under review | How do you set up a new product from one to five good images and still find small defects? |
+| [memory-pollution-ad](https://github.com/sergiovillanueva/memory-pollution-ad) | MAKE, 2026 | What goes wrong when many products share one memory bank, and how do you fix it? |
+| [patch-purification-fewshot](https://github.com/sergiovillanueva/patch-purification-fewshot) | Electronics, 2026 | What happens if a defective part slips into the reference images at commissioning? |
+| [pc-reg](https://github.com/sergiovillanueva/pc-reg) | Electronics, 2026 | How do you detect parts that look fine but are missing or in the wrong place? |
+
+Sergio Villanueva López · [LinkedIn](https://www.linkedin.com/in/sergiovillanuevalopez)
